@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>eu.clarity-h2020</groupId>
+    <artifactId>csis-architecture</artifactId>
+    <version>0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    
+    <name>CALRITY CSIS Architecture</name>
+    <description>Architecture of the EU H2020 Project "Integrated Climate Adaptation Service Tools for Improving Resilience Measure Efficiency" - CLARTIY.</description>
+    
+    <scm>
+        <connection>scm:git:https://github.com/clarity-h2020/csis-architecture.git</connection>
+        <developerConnection>scm:git:git@github.com:clarity-h2020/csis-architecture.git</developerConnection>
+        <url>https://github.com/clarity-h2020/csis-architecture.git</url>
+        <tag>HEAD</tag>
+    </scm>
+    
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/clarity-h2020/csis-architecture.git/issues</url>
+    </issueManagement>
+    
+    <organization>
+        <name>CLARITY</name>
+        <url>http://www.clarity-h2020.eu/</url>
+    </organization>
+    
+    <inceptionYear>2018</inceptionYear>
+    
+    <licenses>
+        <license>
+            <name>GNU Lesser Public License</name>
+            <distribution>repo</distribution>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.html</url>
+        </license>
+    </licenses>
+   
+    <developers>
+        <developer>
+            <id>pdihe</id>
+            <name>Pascal Dihé</name>
+            <email>pascal.dihe@cismet.de</email>
+            <organization>cismet GmbH</organization>
+        </developer>
+    </developers>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.version>3.5.3</maven.version>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.structurizr</groupId>
+            <artifactId>structurizr-client</artifactId>
+            <version>1.0.0-RC5</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
