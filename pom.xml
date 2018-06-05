@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>eu.clarity-h2020</groupId>
     <artifactId>csis-architecture</artifactId>
-    <version>0.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <name>CALRITY CSIS Architecture</name>
@@ -61,6 +61,12 @@
             <artifactId>structurizr-client</artifactId>
             <version>1.0.0-RC5</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 </project>
