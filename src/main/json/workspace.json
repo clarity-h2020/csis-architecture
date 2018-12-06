@@ -133,14 +133,14 @@
       "title" : "Context",
       "order" : 2,
       "format" : "Markdown",
-      "content" : "## Context\r\n\r\n![](embed:SystemLandscape)\r\n### SystemContext CSIS\r\n![](embed:CSIS)\r\n![](embed:SystemContext.svg)\r\n\r\n### Deployment\r\n![](embed:Deployment)\r\n![](embed:DeploymentView.svg)\r\n\r\n"
+      "content" : "## Context\r\n\r\n### SystemContext CSIS\r\n![](embed:SystemContextView)\r\n![](SystemContextView.svg)\r\n\r\n### Deployment\r\n![](embed:DeploymentView)\r\n![](DeploymentView.svg)\r\n\r\n"
     } ]
   },
   "views" : {
     "systemContextViews" : [ {
       "softwareSystemId" : "3",
       "description" : "CSIS System Context",
-      "key" : "SystemContext",
+      "key" : "SystemContextView",
       "paperSize" : "A5_Landscape",
       "enterpriseBoundaryVisible" : false,
       "elements" : [ {
