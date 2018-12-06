@@ -1,0 +1,24 @@
+@startuml(id=DeploymentView)
+scale max 2000x1409
+title CSIS - Deployment - Development
+caption An example development deployment scenario for the Internet Banking System.
+
+skinparam {
+  shadowing false
+  arrowColor #707070
+  actorBorderColor #707070
+  componentBorderColor #707070
+  rectangleBorderColor #707070
+  noteBackgroundColor #ffffff
+  noteBorderColor #707070
+  rectangleFontColor #ffffff
+  rectangleStereotypeFontColor #ffffff
+}
+node "Developer Laptop" <<Microsoft Windows 10 or Apple macOS>> as 12 {
+  node "Docker Container - Web Server" <<Docker>> as 13 {
+    node "Apache Tomcat" <<Apache Tomcat 8.x>> as 14 {
+      rectangle "Runtime Environment" <<Container>> as 15 #dddddd
+    }
+  }
+}
+@enduml

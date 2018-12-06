@@ -1,0 +1,47 @@
+@startuml(id=SystemContext)
+scale max 2000x1409
+title CSIS - System Context
+caption CSIS System Context
+
+skinparam {
+  shadowing false
+  arrowColor #707070
+  actorBorderColor #707070
+  componentBorderColor #707070
+  rectangleBorderColor #707070
+  noteBackgroundColor #ffffff
+  noteBorderColor #707070
+  rectangleFontColor #ffffff
+  rectangleStereotypeFontColor #ffffff
+}
+rectangle 3 <<Software System>> #1168bd [
+  CSIS
+  --
+  Climate Service Information
+  System
+]
+actor "Customer" <<Person>> as 1 #08427b
+note right of 1
+  Climate Service Customer
+end note
+rectangle 4 <<Software System>> #1168bd [
+  Marketplace
+  --
+  Climate Service Marketplace
+]
+rectangle 5 <<Software System>> #1168bd [
+  Platforms and Portals
+  --
+  External (Climate) Data
+  Infrasrtuctures, Servive
+  Platform and Portals
+]
+actor "Supplier" <<Person>> as 2 #08427b
+note right of 2
+  Climate Service Supplier
+end note
+1 .[#707070].> 3 : perform climate addaptation study
+1 .[#707070].> 4 : discover additional products and services
+4 .[#707070].> 3 : promote products and services
+2 .[#707070].> 4 : offer value-added products and services
+@enduml
