@@ -22,3 +22,10 @@ The documentation of the Emergent Architecture follows the [C4 model for softwar
 ###[Deployment View](//clarity-h2020.github.io/csis-architecture/docs/05-deployment-view)
 
 ###[Dynamic View](//clarity-h2020.github.io/csis-architecture/docs/06-dynamic-view)
+
+## Reference Modelling Workflow
+
+The Reference Modelling Workflow describes the technical implementation of the EU-GL/CLARTIY Modelling Methodology 
+(documented in CLARTIY deliverable [D3.1 Science Support Plan](https://zenodo.org/communities/clarity/)) [CLARTIY CSIS](//csis.myclimateservice.eu/).
+
+![](ReferenceModellingWorkflow.svg)
