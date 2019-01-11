@@ -10,7 +10,7 @@
     
     <groupId>eu.clarity-h2020</groupId>
     <artifactId>csis-architecture</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.4-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <name>CALRITY CSIS Architecture</name>
@@ -128,13 +128,13 @@
                         </includes>
                     </sourceFiles>
                     <charset>UTF-8</charset>
-                    <outputDirectory>${basedir}/docs</outputDirectory>
+                    <outputDirectory>${basedir}/docs/architecture</outputDirectory>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>net.sourceforge.plantuml</groupId>
                         <artifactId>plantuml</artifactId>
-                        <version>1.2018.13</version>
+                        <version>1.2018.14</version>
                     </dependency>
                 </dependencies>
             </plugin>

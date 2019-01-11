@@ -184,4 +184,19 @@
             <activatedProfile>netbeans-fastbuild</activatedProfile>
         </activatedProfiles>
     </action>
+    <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath eu.clarity_h2020.csis.architecture.WorkspaceExporter ${project.basedir}/src/main/plantuml ${project.basedir}/src/main/json</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
 </actions>

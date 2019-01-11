@@ -39,7 +39,7 @@ public class CsisArchitectureFactory {
 
     protected Logger log = Logger.getLogger(CsisArchitectureFactory.class);
     protected final Workspace workspace;
-    protected final URL documentationRoot = CsisArchitectureFactory.class.getResource("documentation");
+    protected final URL documentationRoot = CsisArchitectureFactory.class.getResource("documentation/architecture");
 
     //~ Constructors -----------------------------------------------------------
 
