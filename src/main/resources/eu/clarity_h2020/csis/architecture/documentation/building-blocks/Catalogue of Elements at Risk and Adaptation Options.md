@@ -72,7 +72,7 @@ The assessment of the Exploitation Requirements \[11\] identified the following 
 
 Figure 16 gives an overview on the technological possibilities and the related backend software component that has been selected for the Technology Support Plan.
 
-![](./media/BB Catalogue of Elements at Risk and Adaptation Options.svg)
+![](./media/BB-Catalogue-of-Elements-at-Risk-and-Adaptation-Options.svg)
 
 Figure 9: Catalogue of Elements at Risk and Adaptation Options Technology Support
 

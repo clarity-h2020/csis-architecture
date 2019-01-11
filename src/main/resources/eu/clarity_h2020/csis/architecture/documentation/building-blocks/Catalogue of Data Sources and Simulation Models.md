@@ -58,7 +58,7 @@ The assessment of the Exploitation Requirements \[11\] identified the following 
 
 Figure 10 gives an overview on the technological possibilities and the related open-source backend and frontend software components that have been selected for the Technology Support Plan.
 
-![](./media/BB Catalogue of Data Sources and Simulation Models.svg)
+![](./media/BB-Catalogue-of-Data-Sources-and-Simulation-Models.svg)
 
 Figure 10: Catalogue of Data Sources and Simulation Models Technology Support
 
