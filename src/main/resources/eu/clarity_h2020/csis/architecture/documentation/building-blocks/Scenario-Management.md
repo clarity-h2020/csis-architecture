@@ -4,7 +4,7 @@ The Scenario Management Building Block supports and enforces first and foremost 
 
 For each of the distinct EU-GL modules or steps (Figure 20) the CSIS offers generic data-driven ICT Climate Services and Building Blocks, respectively, which are directly integrated into the Scenario Management Building Block. Additionally, there is the possibility for Climate Server Providers to develop sectoral or even site-specific ICT Climate Services that can be integrated into the Scenario Management Building Block on-demand for specific infrastructure project types, sectors or Climate Service Customers. This applies for example specifically to the non-generic aspect of Scenario Management, which is explained in the following.
 
-![](./media/image24.emf)
+![](./media/image24.png)
 
 Figure 20: Modules of the EU-GL as part of the overall CLARITY CSIS workflow
 
@@ -84,7 +84,7 @@ The assessment of the Exploitation Requirements \[11\] identified the following 
 
 Figure 21 gives an overview on the technological possibilities and the related open-source frontend and backend software components that have been selected for the Technology Support Plan.
 
-![](./media/image25.emf)
+![](./media/BB-Scenario-Management.svg)
 
 Figure 21: Scenario Management Technology Support
 
