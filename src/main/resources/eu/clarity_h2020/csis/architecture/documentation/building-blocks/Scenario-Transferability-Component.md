@@ -68,7 +68,7 @@ The assessment of the Exploitation Requirements \[11\] identified the following 
 
 Figure 26 gives an overview on the technological possibilities and the related open-source frontend and backend software components that have been selected for the Technology Support Plan.
 
-![](./media/BB-Scenario--Transferability-Component.svg)
+![](./media/BB-Scenario-Transferability-Component.svg)
 
 Figure 26: Scenario Transferability Component Technology Support
 
