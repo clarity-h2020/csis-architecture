@@ -1,38 +1,57 @@
-## Summary
+## Multi Criteria Decision Analysis Tool
 
-The Multi-Criteria-Analysis Decision Support Tool support the analysis and comparison of (adaptation) scenarios regarding performance indicators that can be defined by the end user and thus leverages what-if decision support to investigate the effects of adaptation measures and risk reduction options in the specific project context, and allows the comparison of alternative strategies. Thereby the tool provides multi-criteria ranking functions to compare and rank different scenarios and corresponding adaptation plans according to different criteria and their relative weight and level of importance. 
+The Multi Criteria Decision Analysis Tool supports the analysis and comparison of (adaptation) scenarios regarding performance indicators that can be defined by the end user and thus leverages what-if decision support to investigate the effects of adaptation measures and risk reduction options in the specific project context, and allows the comparison of alternative strategies. Thereby the tool provides multi-criteria ranking functions to compare and rank different scenarios and corresponding adaptation plans according to different criteria and their relative weight and level of importance.
 
-## Functionality
+### Requested functionality
 
-Baseline requirements elicitation and the assessment of presently available Test Cases identified the following functional requirements on this particular Building Block:
+Baseline requirements elicitation and the assessment of presently available Test Cases have yielded the following functional requirements for this Building Block:
 
 **Baseline functionality**
 
-- a highly interactive and user-friendly decision support tool
-- supports state of the art Multi-Criteria Decision Analysis (MCDA) methods
-- helps the decision maker and strategic planner to perform multi-criteria ranking of scenarios
-- compares Indicators (quantity) derived (e.g. aggregated) from complex and usually not easily comparable scenario data (e.g. outputs of impact models)
-- compares Criteria (quality) derived from Indicators by defining a level of satisfaction for each Indicator (qualification)
-- performs ranking of scenarios with respect to a user-defined decision strategy (e.g. Ordered Weighted Averages)
-- implements different weighting strategies
+  - a highly interactive and user-friendly decision support tool
 
-**Functionality requested by DC Test Cases:**
+  - supports state of the art Multi-Criteria Decision Analysis (MCDA) methods
 
-- from **[TC DC1](http://cat.clarity-h2020.eu/content/tc-dc1-enabling-comparison-alternative-adaptation-scenarios)**: This Building Block should allow the following: 1. selection of the "weight" of predefined performance criteria (e.g. cost, avoided impacts, other co-benefits, etc); 2. ranking of alternative scenarios following the selected criteria.
-- from **[TC DC4 080](http://cat.clarity-h2020.eu/content/tc-dc4-080-decision-support-tool-road-element)**: The Multi-Criteria-Analysis Decision Support Tool is used to help the user on decision making based on standardised indicators derived from impact scenario data.
+  - helps the decision maker and strategic planner to perform multi-criteria ranking of scenarios
 
-## Exploitation Requirements assessment**
+  - compares Indicators (quantity) derived (e.g. aggregated by an expert-provided Indicator Function) from complex and usually not easily comparable scenario data (e.g. outputs of impact models)
 
-The assessment of the Exploitation Requirements [2] identified the following concrete technical and functional implications on this particular Building Block:
+  - compares Criteria (quality) derived from Indicators by defining a level of satisfaction for each Indicator (qualification)
 
-- from "Establish trust in Climate Services and their providers": Uncertainty should be quantifiable, e.g. derived from statistical properties. Then, uncertainty could be considered as an indicator that can be transformed (normalised) to criteria. This way, uncertainty could be incorporated into Multi Criteria Analysis.
-- from "Follow a multi-sectoral approach that crosses the boundary of climate sciences": Depending on the type of project as well as the sector and fields of interest of end users, the importance of different parameters will vary. E.g. For most project managers, financial parameters/indicators and information will be of higher interest, than climatic indicators and information by itself, while end users with a focus on risk assessment in order to keep people save will value indicators about the occurrence and intensity of climate related hazards higher, than financial parameters. In order to provide pinpointed information for all relevant parties, it must be ensured that the results and provided information suits their respective needs. If there is the need to rank different scenarios, this could e.g. done by implementing a weighing system for indicators (automatic per type of end user or end users set the weighting factors according to their preferences) for the Multi Criteria Analysis. With indicators, being part of the results provided to end users, those indicators must address all possible questions related to Climate Services end users might have. Therefore, indicators need to cover a wide variety of topics (climate, air quality, financial, social, etc.).
-- from "Use, define and promote open standards for data and services": A simple (KISS principle) standardised format for Indicators that are relevant for the Multi Criteria Decision Support has to be defined. Technically, (Impact) model output must be transformed (e.g. by an aggregation or Indicator Function) into a standardised Indicator Set so that the Indicators can easily be compared or visualised by the respective tools. Of course, this Indicator Set is also part of a Data Package.
+  - performs ranking of scenarios with respect to a user-defined decision strategy (e.g. Ordered Weighted Averages)
 
-## Technology Support
+  - implements different weighting strategies
 
-The CRISMA MCDA Tools are developed as generic HTML5/AJAX widgets which makes directly usable as generic ICT Climate Services. They rely on a simple standardised JSON (JavaScript Object Notation) data format which fits perfectly into CLARITY’s data driven approach. An example of an indicator vector in JSON format is depicted in Listing 1. In the example, the two categories “casualties” and “cost” are shown. While the general structure of the indicator data is not expected to change in CLARITY, additional extensions both regarding the data format as well the graphical user interface may be necessary depending on upcoming requirements from end user workshops, business cases and the overall agile development cycle. Nevertheless the general MCDA concept may not only useful for the comparison and ranking of adaptation scenarios resulting from Impact Scenario Analysis [4], but probably also for (pre-feasibility) Risk Assessment and general climate scenarios. 
- 
-Listing 1: Indicator Vector data format
-As tools have been implemented on basis of the AngularJS 1.0 JavaScript framework, it must be noted, that version 1.0 has been superseded by AngularJS 5.0 in 2017 and version 1.0 reached end of life in 2016. While this does not mean that the CRISMA MCDA Tools will stop to work, it could be problematic to develop the existing open source tools further for CRISMA. Although AngularJS 1.0 is still actively maintained by the community on GitHub (https://github.com/angular/angular.js/), no new plugins and libraries are being developed for version 1.0 and existing libraries and plugins don’t receive new feature or security updates for AngularJS 1.0 in most cases. Probably considerable development effort would therefore be required to add additional features to the CRISMA MCDA Tools, e.g. other types of advanced diagrams. Another issues is, that the build- and dependency management tools Grunt (https://gruntjs.com/) and (https://bower.io/) used by CRISMA MCDA Tools’ build environment have been discontinued. This is in particular a problem since Bower is unable to leverage libraries from the npm software registry (https://www.npmjs.com/) and an increasing number of libraries are not available on bower. Depending on adaptations and additions that have to be made to the CRISMA MCDA Tools in CLARITY, it has to be decided whether the development can continue on basis of the original JavaScript Framework and the related build environment, or if the tools have to be ported to a new framework and build environment. Candidates for new frameworks are for example AngularJS 6.0 (https://angular.io/) which will be released in March 2018 and ReactJS 16.0 (https://reactjs.org/) which has been released in September 2017. The related build environment could be based on Webpack (https://webpack.js.org/), Babel (https://babeljs.io/) and Yarn (https://yarnpkg.com/) which would fit seamlessly into the CLARITY Development Environment described in Annex 3 of D1.1 “Initial Workshops and the Clarity Development Environment” [11].
-The CLARITY MCDA Tools support the Ordered Weighted Averages (OWA) method which is based on multi-criteria aggregation operators proposed by Yager [19]. OWA is characterized by a vector of ordered weights in addition to the importance weights assigned to each criterion. Using OWA, normalized indicator values are multiplied with a corresponding level of importance. Depending on upcoming user requirements additional ranking methods could be supported by the CLARITY MCDA Tools. An example of JSON-based data format of an OWA decision strategy used within the Decision Strategy Definition Widget (Figure 23) is depicted in Listing 2.
+**Functionality requested by DC Test Cases**
+
+  - from TC DC1: This Building Block should allow the following: 1. selection of the "weight" of predefined performance criteria (e.g. cost, avoided impacts, other co-benefits, etc.); 2. ranking of alternative scenarios following the selected criteria.
+
+  - from TC DC4 080: The Multi-Criteria-Analysis Decision Support Tool is used to help the user on decision making based on standardised indicators derived from impact scenario data.
+
+### Exploitation Requirements assessment
+
+The assessment of the Exploitation Requirements \[11\] identified the following concrete technical and functional implications on this Building Block:
+
+  - from "Establish trust in Climate Services and their providers": Uncertainty should be quantifiable, e.g. derived from statistical properties. Then, uncertainty could be considered as an indicator that can be transformed (normalised) to criteria. This way, uncertainty could be incorporated into Multi Criteria Analysis.
+
+  - from "Follow a multi-sectoral approach that crosses the boundary of climate sciences": Depending on the type of project as well as the sector and fields of interest of end users, the importance of different parameters will vary. E.g. For most project managers, financial parameters/indicators and information will be of higher interest, than climatic indicators and information by itself, while end users with a focus on risk assessment in order to keep people save will value indicators about the occurrence and intensity of climate related hazards higher, than financial parameters. In order to provide pinpointed information for all relevant parties, it must be ensured that the results and provided information suits their respective needs. If there is the need to rank different scenarios, this could be e.g. done by implementing a weighing system for indicators (automatic per type of end user or end users set the weighting factors according to their preferences) for the Multi Criteria Analysis. With indicators, being part of the results provided to end users, those indicators must address all possible questions related to Climate Services end users might have. Therefore, indicators need to cover a wide variety of topics (climate, air quality, financial, social, etc.).
+
+  - from "Use, define and promote open standards for data and services": A simple (KISS principle) standardised format for Indicators that are relevant for the Multi Criteria Decision Analysis must be defined. Technically, (impact) model output must be transformed (e.g. by an aggregation or Indicator Function) into a standardised Indicator Set so that the Indicators can easily be compared or visualised by the respective tools.
+
+### Technology support
+
+Figure 29 gives an overview on the technological possibilities and the related open-source frontend and backend software components that have been selected for the Technology Support Plan.
+
+![](./media/BB-Multi-Criteria-Decision-Analysis-Tool.svg)
+
+Figure 29: Multi Criteria Decision Analysis Tool Technology Support
+
+As described in Annex 1, the **Multi Criteria Decision Analysis (MCDA) Tools** (<https://github.com/crismaproject>) of the CRISMA project (<https://crisma-cat.ait.ac.at/>) are developed as open-source **HTML5/AJAX** widgets which makes them directly usable as generic ICT Climate Services. They rely on a simple standardised **JSON** (JavaScript Object Notation) data format which fits perfectly into CLARITY’s data driven approach and, in combination with the **RESTful API** deployed on top of a **PostgreSQL** database, is also compatible with the Integration RDBMS (7.3) backend of the Scenario Management (4.3) and UI Integration Platform (7.5) Building Blocks, respectively.
+
+<https://www.json.org/>
+
+As the CRISMA tools have been implemented on basis of the **AngularJS** 1.0 JavaScript framework, it must be noted, that version 1.0 has been superseded by **Angular** 5.0 in 2017 and version 1.0 reached end of life in 2016. Although AngularJS 1.0 is still actively maintained by the community on GitHub (<https://github.com/angular/angular.js/>), no new plugins and libraries are being developed for version 1.0 and existing libraries and plugins don’t receive new feature or security updates for AngularJS 1.0 in most cases.
+
+<https://angularjs.org/>
+
+Depending on additional functionality that is requested for the Multi Criteria Decision Analysis Tool, it might therefore be necessary to base further developments of the tool on more recent JavaScript Frameworks like **Angular 6.0** or **React 16.0**. A detailed discussion of this topic can be found in the description of the planned usage of the CRISMA Multi Criteria Decision Analysis Tool in in Annex 1.
