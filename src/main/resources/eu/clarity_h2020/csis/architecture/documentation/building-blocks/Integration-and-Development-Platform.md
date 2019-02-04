@@ -1,22 +1,55 @@
-## Summary
+## Integration and Development Platform
 
-"Continuous integration is a software engineering practice in which isolated changes are immediately tested and reported on when they are added to a larger code base. The goal of CI is to provide quick feedback so that if a defect is introduced into the code base, it can be identified and corrected as soon as possible. Continuous integration software tools can be used to automate the testing and build a document trail." 
-(July 2008 by Margaret Rouse - http://searchsoftwarequality.techtarget.com/definition/continuous-integration )
+As described in D1.1 “Initial workshops and the CLARITY development environment” \[2\], the purpose of this Building Bock is to provide a continuous integration platform allowing every consortium partner to be equipped with the tools and measures for best practices in software engineering. One of the most important factors on a successful IT project is to develop high quality software. Thereby, an appropriate development infrastructure and best practices are crucial in development in a distributed environment.
 
-## Functionality
+"Continuous integration is a software engineering practice in which isolated changes are immediately tested and reported on when they are added to a larger code base. The goal of CI is to provide quick feedback so that if a defect is introduced into the code base, it can be identified and corrected as soon as possible. Continuous integration software tools can be used to automate the testing and build a document trail." \[13\]
 
-As described in deliverable 1.1 - Initial workshops and the clarity development environment, the purpose of this task is to provide a continuous integration platform allowing every consortium partner to rely on a software engineering practice already consolidated. One of the most important factors on a successful IT projects is to develop high quality software. Use an appropriate development infrastructure and best practices could be crucial in development in a distributed environment.
+### Requested functionality
 
-Continuous Integration can prevent and reduce errors by analysing health of the source code, since code analysis and tests provided by a CI environment can reveal bugs in a more effective way ensuring a higher quality final product. This feature gives more confidence to developer team on providing new functionalities and makes development much more comfortable, it even provide tools to generate API-like documentation for all committed code, making much easier to improve and reuse source code or software components.
+Baseline requirements elicitation has yielded the following functional requirements for this Building Block:
 
+  - support the development of industrial-quality code
 
-## Exploitation Requirements assessment
+  - provide a consistent development toolset for
+    
+      - source code management
+    
+      - dependencies management
+    
+      - build automation
+    
+      - automated testing
+    
+      - continuous integration
+    
+      - release management
 
-The assessment of the Exploitation Requirements [2] identified the following concrete technical and functional implications on this particular Building Block:
+### Exploitation Requirements assessment
 
-- from "Develop a viable business ecosystem, business model and secure access to funding": provision of a development environment and continuous integration system that eases common software maintenance tasks, e.g. bug fixes
+The assessment of the Exploitation Requirements \[11\] identified the following concrete technical and functional implications on this Building Block:
 
-## Technology Support
+  - from "Develop a viable business ecosystem, business model and secure access to funding": provision of a development environment and continuous integration system that eases common software maintenance tasks, e.g. bug fixes.
 
-- the source code of the various visual modules to be implemented/integrated in the CIS web client(s) must be tested against the different browser flavours available in the market (i.e., Firefox, Chrome, Safari, Internet Explorer) in order to ensure that they run smoothly and free of incompatibilities in each them. To that end, plugins for the Jenkins( https://jenkins-ci.org/) Continuous Integration service like Selenium(http://www.seleniumhq.org/) allowing carrying out such automated tests will be used in the development phase (from "Provide a user-friendly, intuitive and context-aware discovery and communication infrastructure for Climate Service")
+### Technology support
 
+Figure 33 gives an overview on the technological possibilities and the related open-source frontend and backend software components that have been selected for the Technology Support Plan. Since technology support for this Building Block is provided by T1.4 “Industrialization and Support”, a more detailed description is provided in D1.1 “Initial workshops and the CLARITY development environment” \[8\].
+
+![](./media/BB-Integration-and-Development-Platform.svg)
+
+Figure 33: Integration and Development Platform Technology Support
+
+The technology stack of the Integration and Development Platform is briefly described below. The platform itself is realised by means of different **Docker** containers hosted in the CLARITY Container Engine and Cloud Infrastructure (7.1).
+
+<https://github.com/>
+
+<https://jenkins.io/>
+
+<https://www.sonatype.com/nexus-repository-oss>
+
+<https://www.sonarqube.org/>
+
+<https://www.seleniumhq.org/projects/grid>
+
+<https://gulpjs.com/>
+
+<https://maven.apache.org/>
