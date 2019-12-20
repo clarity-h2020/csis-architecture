@@ -20,19 +20,12 @@
           <y:Geometry height="921.2908611288601" width="1013.6275790202344" x="-18.365955271565582" y="240.01391948881798"/>
           <y:Fill color="#44546A" color2="#44546A" transparent="false"/>
           <y:BorderStyle color="#44546A" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="node_size" borderDistance="8.0" fontFamily="Calibri" fontSize="26" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="921.2908611288601" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1013.6275790202344" x="0.0" y="8.0">Building Blocks and Tasks</y:NodeLabel>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.55908203125" x="3.0" y="78.86931863634936">T1.4 / T4.1<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_size" borderDistance="8.0" fontFamily="Calibri" fontSize="26" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="921.2908611288601" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1013.6275790202344" x="0.0" y="8.0">WP4 Building Blocks and Tasks</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="37.31494140625" x="3.0" y="178.33786167938814">T4.2<y:LabelModel>
               <y:RowNodeLabelModel offset="3.0"/>
             </y:LabelModel>
             <y:ModelParameter>
               <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_0" inside="true"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="37.31494140625" x="3.0" y="250.4867213313625">T4.2<y:LabelModel>
-              <y:RowNodeLabelModel offset="3.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_1" inside="true"/>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="520.8137895101172" y="13.0">
@@ -47,7 +40,7 @@
               <y:RowNodeLabelModel offset="3.0"/>
             </y:LabelModel>
             <y:ModelParameter>
-              <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_2" inside="true"/>
+              <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_1" inside="true"/>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="4.0" x="504.8137895101172" y="458.6454305644301">
@@ -62,21 +55,14 @@
               <y:RowNodeLabelModel offset="3.0"/>
             </y:LabelModel>
             <y:ModelParameter>
+              <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_2" inside="true"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.27685546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="42.0185546875" x="3.0" y="758.8434537531612">T4.5<y:LabelModel>
+              <y:RowNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
               <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_3" inside="true"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.27685546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="42.0185546875" x="3.0" y="690.3434537531612">T4.5<y:LabelModel>
-              <y:RowNodeLabelModel offset="3.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_4" inside="true"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.27685546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="42.0185546875" x="3.0" y="831.7815837851101">T5.4<y:LabelModel>
-              <y:RowNodeLabelModel offset="3.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_5" inside="true"/>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:StyleProperties>
@@ -115,22 +101,16 @@
               </y:Column>
             </y:Columns>
             <y:Rows>
-              <y:Row height="144.29771930394872" id="row_0" minimumHeight="50.0">
+              <y:Row height="293.99066476502634" id="row_0" minimumHeight="50.0">
                 <y:Insets bottom="0.0" left="32.0" right="0.0" top="0.0"/>
               </y:Row>
-              <y:Row height="149.6929454610776" id="row_1" minimumHeight="50.0">
+              <y:Row height="147.20008795062859" id="row_1" minimumHeight="50.0">
                 <y:Insets bottom="0.0" left="32.0" right="0.0" top="0.0"/>
               </y:Row>
-              <y:Row height="147.20008795062859" id="row_2" minimumHeight="50.0">
+              <y:Row height="147.22384834930756" id="row_2" minimumHeight="50.0">
                 <y:Insets bottom="0.0" left="32.0" right="0.0" top="0.0"/>
               </y:Row>
-              <y:Row height="147.22384834930756" id="row_3" minimumHeight="50.0">
-                <y:Insets bottom="0.0" left="32.0" right="0.0" top="0.0"/>
-              </y:Row>
-              <y:Row height="145.87626006389758" id="row_4" minimumHeight="50.0">
-                <y:Insets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-              </y:Row>
-              <y:Row height="137.0000000000001" id="row_5" minimumHeight="50.0">
+              <y:Row height="282.8762600638977" id="row_3" minimumHeight="50.0">
                 <y:Insets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
               </y:Row>
             </y:Rows>
